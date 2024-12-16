@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Test Project</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Test Project</h1>
+    <p>Welcome to the Home Page</p>
+</header>
+
+<div class="container">
+    <div class="message">
+        <h2>This is a Test Project created by MO</h2>
+        <p th:text="${message}">This is a test message. We are building a nice frontend for you!</p>
+    </div>
+
+    <div class="links">
+        <a href="/sign-up">Sign Up</a>
+        <a href="/sign-in">Sign In</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Test Project. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
