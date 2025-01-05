@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AmazonSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/GoogleSearchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="master-hammed" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +62,7 @@
       <recent name="$PROJECT_DIR$/www/css" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Bet365HomepageTest">
+  <component name="RunManager" selected="TestNG.AddToCartTest">
     <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject" />
       <extension name="coverage">
@@ -148,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddToCartTest" />
         <item itemvalue="TestNG.Bet365HomepageTest" />
         <item itemvalue="TestNG.GoogleHomepageTest" />
         <item itemvalue="TestNG.AmazonHomepageTest" />
         <item itemvalue="TestNG.CheckoutTest" />
-        <item itemvalue="TestNG.AddToCartTest" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736085070737</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mobile apps included now">
+      <option name="closed" value="true" />
+      <created>1736090900618</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736090900618</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
