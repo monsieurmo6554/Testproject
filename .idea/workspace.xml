@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/GoogleSearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AmazonSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AmazonSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/GoogleSearchTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +60,8 @@
       <recent name="$PROJECT_DIR$/www/css" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AlertsTest">
-    <configuration name="AlertsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Bet365HomepageTest">
+    <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject" />
       <extension name="coverage">
         <pattern>
@@ -70,7 +70,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AlertsTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AddToCartTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -78,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmazonSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AmazonHomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject" />
       <extension name="coverage">
         <pattern>
@@ -87,7 +87,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AmazonSearchTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AmazonHomepageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -95,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckboxesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Bet365HomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject" />
       <extension name="coverage">
         <pattern>
@@ -104,7 +104,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CheckboxesTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Bet365HomepageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -112,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DropdownTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject" />
       <extension name="coverage">
         <pattern>
@@ -121,7 +121,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.DropdownTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -129,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoogleHomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject" />
       <extension name="coverage">
         <pattern>
@@ -138,7 +138,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.GoogleSearchTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.GoogleHomepageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AlertsTest" />
-        <item itemvalue="TestNG.DropdownTest" />
-        <item itemvalue="TestNG.CheckboxesTest" />
-        <item itemvalue="TestNG.GoogleSearchTest" />
-        <item itemvalue="TestNG.AmazonSearchTest" />
+        <item itemvalue="TestNG.Bet365HomepageTest" />
+        <item itemvalue="TestNG.GoogleHomepageTest" />
+        <item itemvalue="TestNG.AmazonHomepageTest" />
+        <item itemvalue="TestNG.CheckoutTest" />
+        <item itemvalue="TestNG.AddToCartTest" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735766908307</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mobile apps included now">
+      <option name="closed" value="true" />
+      <created>1736085070737</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736085070737</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
