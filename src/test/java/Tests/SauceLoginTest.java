@@ -40,7 +40,7 @@ public class SauceLoginTest {
         WebElement loginButton = driver.findElement(By.id("login-button"));
         loginButton.click();
 
-        // Verify the page has successfully loaded (Check if product images are visible)
+        // Verify the page has successfully loaded Also check if product images are displayed
         WebElement productImage = driver.findElement(By.cssSelector(".inventory_item_img"));
         Assert.assertTrue(productImage.isDisplayed(), "Product page not loaded.");
 
