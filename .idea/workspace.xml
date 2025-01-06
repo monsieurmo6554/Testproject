@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestEndToEndPurchase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,24 +54,7 @@
       <recent name="$PROJECT_DIR$/www/css" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckoutTest1">
-    <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AddToCartTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestEndToEndPurchase">
     <configuration name="AlertsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject" />
       <extension name="coverage">
@@ -143,13 +123,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestEndToEndPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TestEndToEndPurchase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestEndToEndPurchase" />
         <item itemvalue="TestNG.CheckoutTest1" />
         <item itemvalue="TestNG.CheckoutTest" />
         <item itemvalue="TestNG.AlertsTest" />
         <item itemvalue="TestNG.SauceLoginTest" />
-        <item itemvalue="TestNG.AddToCartTest" />
       </list>
     </recent_temporary>
   </component>
