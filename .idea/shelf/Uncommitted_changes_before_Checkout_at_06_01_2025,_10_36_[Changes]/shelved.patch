@@ -1,0 +1,143 @@
+Index: src/test/java/Tests/AddToCartTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Tests;\n\nimport io.github.bonigarcia.wdm.WebDriverManager;\nimport org.openqa.selenium.By;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.chrome.ChromeDriver;\nimport org.openqa.selenium.support.ui.ExpectedConditions;\nimport org.openqa.selenium.support.ui.WebDriverWait;\nimport org.testng.Assert;\nimport org.testng.annotations.BeforeMethod;\nimport org.testng.annotations.Test;\n\nimport java.time.Duration;\n\npublic class AddToCartTest {\n    private WebDriver driver;\n\n    @BeforeMethod\n    public void setUp() {\n        WebDriverManager.chromedriver().setup();\n        driver = new ChromeDriver();\n        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));\n        driver.manage().window().maximize();\n    }\n\n    @Test\n    public void testAddToCart() {\n        // Navigate to Sauce Demo homepage\n        driver.get(\"https://www.saucedemo.com/\");\n\n        // Wait for the login page to display (wait until the user-name input is visible)\n        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));\n        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(\"user-name\")));\n\n        // Log in with valid credentials\n        driver.findElement(By.id(\"user-name\")).sendKeys(\"standard_user\");\n        driver.findElement(By.id(\"password\")).sendKeys(\"secret_sauce\");\n        driver.findElement(By.id(\"login-button\")).click();\n\n        // Wait for the page to sign in (wait until the products page is visible)\n        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(\".inventory_list\")));\n\n        // Locate the first product and add it to the cart\n        WebElement addToCartButton = driver.findElement(By.cssSelector(\".btn_inventory\"));\n        addToCartButton.click();\n\n        // Verify the cart count has increased\n        WebElement cartIcon = driver.findElement(By.cssSelector(\".shopping_cart_badge\"));\n        Assert.assertEquals(cartIcon.getText(), \"1\", \"Product was not added to the cart.\");\n\n        /*\n    }\n\n    @AfterMethod\n    public void tearDown() {\n        if (driver != null) {\n            driver.quit();  // Close the browser after each test\n        }\n\n         */\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/AddToCartTest.java b/src/test/java/Tests/AddToCartTest.java
+--- a/src/test/java/Tests/AddToCartTest.java	(revision 922c58f058d4288f3612c62e9e9239db902046d9)
++++ b/src/test/java/Tests/AddToCartTest.java	(date 1736094731328)
+@@ -1,63 +1,0 @@
+-package Tests;
+-
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.openqa.selenium.support.ui.ExpectedConditions;
+-import org.openqa.selenium.support.ui.WebDriverWait;
+-import org.testng.Assert;
+-import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+-
+-import java.time.Duration;
+-
+-public class AddToCartTest {
+-    private WebDriver driver;
+-
+-    @BeforeMethod
+-    public void setUp() {
+-        WebDriverManager.chromedriver().setup();
+-        driver = new ChromeDriver();
+-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+-        driver.manage().window().maximize();
+-    }
+-
+-    @Test
+-    public void testAddToCart() {
+-        // Navigate to Sauce Demo homepage
+-        driver.get("https://www.saucedemo.com/");
+-
+-        // Wait for the login page to display (wait until the user-name input is visible)
+-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-name")));
+-
+-        // Log in with valid credentials
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-
+-        // Wait for the page to sign in (wait until the products page is visible)
+-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".inventory_list")));
+-
+-        // Locate the first product and add it to the cart
+-        WebElement addToCartButton = driver.findElement(By.cssSelector(".btn_inventory"));
+-        addToCartButton.click();
+-
+-        // Verify the cart count has increased
+-        WebElement cartIcon = driver.findElement(By.cssSelector(".shopping_cart_badge"));
+-        Assert.assertEquals(cartIcon.getText(), "1", "Product was not added to the cart.");
+-
+-        /*
+-    }
+-
+-    @AfterMethod
+-    public void tearDown() {
+-        if (driver != null) {
+-            driver.quit();  // Close the browser after each test
+-        }
+-
+-         */
+-    }
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"mobile apps included now\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/AlertsTest.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master-hammed\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2qIyB5upYtH5C9CGNPJ6RAvnF9g\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"autoscrollToSource\" value=\"true\" />\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"onboarding.tips.debug.path\": \"/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java\",\n    \"project.structure.last.edited\": \"Project\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.0\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/www/css\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"TestNG.AddToCartTest\">\n    <configuration name=\"AddToCartTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"TestProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.AddToCartTest\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"AmazonHomepageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"TestProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.AmazonHomepageTest\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Bet365HomepageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"TestProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.Bet365HomepageTest\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"CheckoutTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"TestProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.CheckoutTest\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"GoogleHomepageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"TestProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.GoogleHomepageTest\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"TestNG.AddToCartTest\" />\n        <item itemvalue=\"TestNG.Bet365HomepageTest\" />\n        <item itemvalue=\"TestNG.GoogleHomepageTest\" />\n        <item itemvalue=\"TestNG.AmazonHomepageTest\" />\n        <item itemvalue=\"TestNG.CheckoutTest\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"\" />\n      <created>1734364246942</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1734364246942</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"mobile apps included now\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1734375030838</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1734375030838</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"mobile apps included now\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1734375076803</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1734375076803</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"mobile apps included now\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1734375288848</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1734375288848</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"mobile apps included now\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1734375406166</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1734375406166</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"mobile apps included now\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1735766908306</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1735766908307</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"mobile apps included now\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1736085070737</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1736085070737</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"mobile apps included now\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1736090900618</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1736090900618</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"mobile apps included now\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mobile apps included now\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 922c58f058d4288f3612c62e9e9239db902046d9)
++++ b/.idea/workspace.xml	(date 1736094756892)
+@@ -7,13 +7,6 @@
+     <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertsTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -46,17 +39,17 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "onboarding.tips.debug.path": "/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/www/css" />
+@@ -223,7 +216,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1736090900618</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1736094529014</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1736094529014</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
