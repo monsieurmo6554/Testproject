@@ -27,10 +27,6 @@ public class AmazonHomepageTest {
         // Navigate to Amazon.co.uk homepage
         driver.get("https://www.amazon.co.uk");
 
-        // Optionally: If you need to add a session cookie, you can uncomment the following:
-        // Cookie sessionCookie = new Cookie("session-id", "your-session-id-value");
-        // driver.manage().addCookie(sessionCookie);
-        // driver.navigate().refresh();
 
         // Just wait for the homepage to load and display it for demonstration
         // You can add a simple assertion or validation like checking if the page title is correct

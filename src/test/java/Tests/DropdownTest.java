@@ -26,7 +26,7 @@ public class DropdownTest {
 
     @Test
     public void testDropdown() {
-        // Navigate to the dropdown page
+        // Navigate to the dropdown
         driver.get("https://the-internet.herokuapp.com/dropdown");
 
         // Locate the dropdown element

@@ -36,7 +36,7 @@ public class CheckoutTest {
         // Add the first product to the cart
         driver.findElement(By.cssSelector(".btn_inventory")).click();
 
-        // Navigate to the cart
+        // Navigate to the
         driver.findElement(By.cssSelector(".shopping_cart_link")).click();
 
         // Proceed to checkout

@@ -42,7 +42,7 @@ public class CheckboxesTest {
         Assert.assertFalse(checkbox1.isSelected(), "Checkbox 1 should initially be unchecked.");
         Assert.assertTrue(checkbox2.isSelected(), "Checkbox 2 should initially be checked.");
 
-        // Toggle the checkboxes
+        // Toggle the checkbox
         checkbox1.click();
         checkbox2.click();
 

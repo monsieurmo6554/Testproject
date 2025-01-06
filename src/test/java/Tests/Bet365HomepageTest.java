@@ -31,7 +31,7 @@ public class Bet365HomepageTest {
         driver.get("https://www.bet365.com");
 
 
-         // Verify if key elements are displayed, for example, the logo or a navigation element
+         // Verify if key elements are visible, for example, the logo or a navigation element
         WebElement logo = driver.findElement(By.cssSelector("img[src*='bet365']"));
         Assert.assertTrue(logo.isDisplayed(), "Bet365 logo is not visible.");
 
