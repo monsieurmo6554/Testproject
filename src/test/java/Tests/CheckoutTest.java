@@ -45,6 +45,6 @@ public class CheckoutTest {
         // Verify the checkout page loaded
         WebElement checkoutPageTitle = driver.findElement(By.className("title"));
         Assert.assertTrue(checkoutPageTitle.getText().contains("Checkout: Your Information"), "Checkout page did not load.");
-
+      // Hi, My Name is Mo
     }
 }

@@ -37,9 +37,15 @@ public class AddToCartTest {
         WebElement addToCartButton = driver.findElement(By.cssSelector(".btn_inventory"));
         addToCartButton.click();
 
+        // wait for login page to display
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
         // Verify the cart count has increased
         WebElement cartIcon = driver.findElement(By.cssSelector(".shopping_cart_badge"));
         Assert.assertEquals(cartIcon.getText(), "1", "Product was not added to the cart.");
+
+        // this is to minimize page
+        driver.manage().window().minimize();
 
     }
 }
