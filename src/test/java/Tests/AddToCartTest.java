@@ -44,8 +44,16 @@ public class AddToCartTest {
         WebElement cartIcon = driver.findElement(By.cssSelector(".shopping_cart_badge"));
         Assert.assertEquals(cartIcon.getText(), "1", "Product was not added to the cart.");
 
-        // this is to minimize page
-        driver.manage().window().minimize();
+        //Extend Current Test to click on hamburger Menu to open options and click the About button.
+        // Then Assert that test navigate to the About page//
+        WebElement hamburger = driver.findElement(By.id("react-burger-menu-btn"));
+        hamburger.click();
+
+        WebElement about = driver.findElement(By.id("about_sidebar_link"));
+        about.click();
+
+
+        //Create a new Java Class for Check Out Test//
 
     }
 }
