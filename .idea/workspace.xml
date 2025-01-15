@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestEndToEndPurchase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/testNavigateToAboutPage.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/AboutPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +45,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.AboutPageTest.executor": "Run",
+    "TestNG.SauceLoginTest.executor": "Run",
     "git-widget-placeholder": "master-Sheriff-TestAutomation",
     "onboarding.tips.debug.path": "/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java",
     "project.structure.last.edited": "Project",
@@ -61,7 +59,24 @@
       <recent name="$PROJECT_DIR$/www/css" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestEndToEndPurchase">
+  <component name="RunManager" selected="TestNG.AboutPageTest">
+    <configuration name="AboutPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AboutPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Bet365HomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestProject" />
       <extension name="coverage">
@@ -72,23 +87,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Bet365HomepageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -149,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestEndToEndPurchase" />
+        <item itemvalue="TestNG.AboutPageTest" />
         <item itemvalue="TestNG.SauceLoginTest" />
+        <item itemvalue="TestNG.TestEndToEndPurchase" />
         <item itemvalue="TestNG.Bet365HomepageTest" />
         <item itemvalue="TestNG.testNavigateToAboutPage" />
-        <item itemvalue="TestNG.CheckoutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -238,10 +236,27 @@
       <option name="project" value="LOCAL" />
       <updated>1736175857672</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mobile apps included now">
+      <option name="closed" value="true" />
+      <created>1736960781120</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736960781120</updated>
+    </task>
+    <task id="LOCAL-00011" summary="mobile apps included now">
+      <option name="closed" value="true" />
+      <created>1736960816183</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736960816183</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Deleted classes" />
     <MESSAGE value="mobile apps included now" />
     <option name="LAST_COMMIT_MESSAGE" value="mobile apps included now" />
   </component>

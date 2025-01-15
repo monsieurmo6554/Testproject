@@ -1,0 +1,298 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"mobile apps included now\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/AlertsTest.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master-hammed\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2qIyB5upYtH5C9CGNPJ6RAvnF9g\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollToSource\" value=\"true\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"onboarding.tips.debug.path\": \"/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/www/css\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.AddToCartTest\">\r\n    <configuration name=\"AddToCartTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.AddToCartTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"AmazonHomepageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.AmazonHomepageTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Bet365HomepageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.Bet365HomepageTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CheckoutTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.CheckoutTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GoogleHomepageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.GoogleHomepageTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.AddToCartTest\" />\r\n        <item itemvalue=\"TestNG.Bet365HomepageTest\" />\r\n        <item itemvalue=\"TestNG.GoogleHomepageTest\" />\r\n        <item itemvalue=\"TestNG.AmazonHomepageTest\" />\r\n        <item itemvalue=\"TestNG.CheckoutTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"\" />\r\n      <created>1734364246942</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1734364246942</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375030838</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375030838</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375076803</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375076803</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375288848</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375288848</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375406166</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375406166</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735766908306</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735766908307</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736085070737</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736085070737</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736090900618</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736090900618</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"mobile apps included now\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mobile apps included now\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 922c58f058d4288f3612c62e9e9239db902046d9)
++++ b/.idea/workspace.xml	(date 1736265248150)
+@@ -4,16 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now">
++    <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="My first commit">
++      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertsTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Bet365HomepageTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/TestScripts/HomePageTest.md" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -31,14 +27,32 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master-hammed" />
++        <entry key="$PROJECT_DIR$" value="master-sheriff-pbi144" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Sheriffsavio&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/monsieurmo6554/Testproject.git&quot;,
++    &quot;accountId&quot;: &quot;61983c02-9896-4d35-a6be-214d17133118&quot;
++  }
++}</component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 6
++}</component>
+   <component name="ProjectId" id="2qIyB5upYtH5C9CGNPJ6RAvnF9g" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -48,13 +62,21 @@
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
++    "Application.TestProjectApplication.executor": "Run",
+     "DefaultHtmlFileTemplate": "HTML File",
++    "JUnit.Bet365HomepageTest.executor": "Run",
++    "JUnit.HomePageTest.executor": "Run",
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "git-widget-placeholder": "master-hammed-testproject",
++    "ignore.virus.scanning.warn.message": "true",
++    "kotlin-language-version-configured": "true",
+     "onboarding.tips.debug.path": "/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0"
++    "project.structure.last.edited": "SDKs",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "editing.templates"
+   }
+ }]]></component>
+   <component name="RecentsManager">
+@@ -62,42 +84,8 @@
+       <recent name="$PROJECT_DIR$/www/css" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.AddToCartTest">
+-    <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="TestProject" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.AddToCartTest" />
+-      <option name="TEST_OBJECT" value="CLASS" />
+-      <properties />
+-      <listeners />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="AmazonHomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="TestProject" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.AmazonHomepageTest" />
+-      <option name="TEST_OBJECT" value="CLASS" />
+-      <properties />
+-      <listeners />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="Bet365HomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
++  <component name="RunManager">
++    <configuration name="Bet365HomepageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -107,54 +95,14 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+       <option name="MAIN_CLASS_NAME" value="Tests.Bet365HomepageTest" />
+-      <option name="TEST_OBJECT" value="CLASS" />
+-      <properties />
+-      <listeners />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="TestProject" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutTest" />
+-      <option name="TEST_OBJECT" value="CLASS" />
+-      <properties />
+-      <listeners />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="GoogleHomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="TestProject" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Tests.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.GoogleHomepageTest" />
+-      <option name="TEST_OBJECT" value="CLASS" />
+-      <properties />
+-      <listeners />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.AddToCartTest" />
+-        <item itemvalue="TestNG.Bet365HomepageTest" />
+-        <item itemvalue="TestNG.GoogleHomepageTest" />
+-        <item itemvalue="TestNG.AmazonHomepageTest" />
+-        <item itemvalue="TestNG.CheckoutTest" />
++        <item itemvalue="JUnit.Bet365HomepageTest" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -183,51 +131,20 @@
+       <option name="project" value="LOCAL" />
+       <updated>1734375076803</updated>
+     </task>
+-    <task id="LOCAL-00003" summary="mobile apps included now">
++    <task id="LOCAL-00003" summary="My first commit">
+       <option name="closed" value="true" />
+-      <created>1734375288848</created>
++      <created>1735770262961</created>
+       <option name="number" value="00003" />
+       <option name="presentableId" value="LOCAL-00003" />
+       <option name="project" value="LOCAL" />
+-      <updated>1734375288848</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="mobile apps included now">
+-      <option name="closed" value="true" />
+-      <created>1734375406166</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1734375406166</updated>
++      <updated>1735770262961</updated>
+     </task>
+-    <task id="LOCAL-00005" summary="mobile apps included now">
+-      <option name="closed" value="true" />
+-      <created>1735766908306</created>
+-      <option name="number" value="00005" />
+-      <option name="presentableId" value="LOCAL-00005" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1735766908307</updated>
+-    </task>
+-    <task id="LOCAL-00006" summary="mobile apps included now">
+-      <option name="closed" value="true" />
+-      <created>1736085070737</created>
+-      <option name="number" value="00006" />
+-      <option name="presentableId" value="LOCAL-00006" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1736085070737</updated>
+-    </task>
+-    <task id="LOCAL-00007" summary="mobile apps included now">
+-      <option name="closed" value="true" />
+-      <created>1736090900618</created>
+-      <option name="number" value="00007" />
+-      <option name="presentableId" value="LOCAL-00007" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1736090900618</updated>
+-    </task>
+-    <option name="localTasksCounter" value="8" />
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="mobile apps included now" />
+-    <option name="LAST_COMMIT_MESSAGE" value="mobile apps included now" />
++    <MESSAGE value="My first commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="My first commit" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/test/java/Tests/Bet365HomepageTest.java
+===================================================================
+diff --git a/src/test/java/Tests/Bet365HomepageTest.java b/src/test/java/Tests/Bet365HomepageTest.java
+new file mode 100644
+--- /dev/null	(date 1736265051234)
++++ b/src/test/java/Tests/Bet365HomepageTest.java	(date 1736265051234)
+@@ -0,0 +1,39 @@
++package Tests;
++import io.github.bonigarcia.wdm.WebDriverManager;
++import org.junit.jupiter.api.Test;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.springframework.test.context.event.annotation.BeforeTestMethod;
++
++import java.time.Duration;
++
++public class Bet365HomepageTest {
++
++    private WebDriver driver;
++    @BeforeTestMethod
++    public void setUp() {
++        // Setup ChromeDriver using WebDriverManager
++        WebDriverManager.chromedriver().setup();
++        driver = new ChromeDriver();
++        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
++        driver.manage().window().maximize();
++    }
++    @Test
++    public void testHomepage() {
++        // Navigate to Bet365 homepage
++        driver.get("https://www.bet365.com");
++        // Verify if key elements are visible, for example, the logo or a navigation element
++        WebElement logo = driver.findElement(By.cssSelector("img[src*='bet365']"));
++
++   //Minimize page after running test
++
++        driver.manage().window().minimize();
++
++
++
++    }
++
++}
++

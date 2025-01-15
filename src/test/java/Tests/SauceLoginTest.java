@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -43,6 +42,7 @@ public class SauceLoginTest {
         // Verify the page has successfully loaded Also check if product images are displayed
         WebElement productImage = driver.findElement(By.cssSelector(".inventory_item_img"));
         Assert.assertTrue(productImage.isDisplayed(), "Product page not loaded.");
+
 
         /*
     }

@@ -1,0 +1,815 @@
+Index: src/test/java/Tests/CheckboxesTest.java
+===================================================================
+diff --git a/src/test/java/Tests/CheckboxesTest.java b/src/test/java/Tests/CheckboxesTest.java
+deleted file mode 100644
+--- a/src/test/java/Tests/CheckboxesTest.java	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
++++ /dev/null	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
+@@ -1,57 +0,0 @@
+-package Tests;
+-
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.openqa.selenium.support.ui.ExpectedConditions;
+-import org.openqa.selenium.support.ui.WebDriverWait;
+-import org.testng.Assert;
+-import org.testng.annotations.AfterMethod;
+-import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+-
+-import java.time.Duration;
+-
+-public class CheckboxesTest {
+-    private WebDriver driver;
+-    private WebDriverWait wait;
+-
+-    @BeforeMethod
+-    public void setUp() {
+-        WebDriverManager.chromedriver().setup();
+-        driver = new ChromeDriver();
+-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+-        driver.manage().window().maximize();
+-
+-        // Initialize WebDriverWait
+-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+-    }
+-
+-    @Test
+-    public void testCheckboxes() {
+-        // Navigate to the checkboxes page
+-        driver.get("https://the-internet.herokuapp.com/checkboxes");
+-
+-        // Wait until checkboxes are visible
+-        WebElement checkbox1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//form[@id='checkboxes']/input[1]")));
+-        WebElement checkbox2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//form[@id='checkboxes']/input[2]")));
+-
+-        // Verify initial states
+-        Assert.assertFalse(checkbox1.isSelected(), "Checkbox 1 should initially be unchecked.");
+-        Assert.assertTrue(checkbox2.isSelected(), "Checkbox 2 should initially be checked.");
+-
+-        // Toggle the checkbox
+-        checkbox1.click();
+-        checkbox2.click();
+-
+-        // Verify states after toggling
+-        Assert.assertTrue(checkbox1.isSelected(), "Checkbox 1 should now be checked.");
+-        Assert.assertFalse(checkbox2.isSelected(), "Checkbox 2 should now be unchecked.");
+-    }
+-
+-
+-
+-    }
+-
+Index: src/test/java/Tests/DropdownTest.java
+===================================================================
+diff --git a/src/test/java/Tests/DropdownTest.java b/src/test/java/Tests/DropdownTest.java
+deleted file mode 100644
+--- a/src/test/java/Tests/DropdownTest.java	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
++++ /dev/null	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
+@@ -1,46 +0,0 @@
+-package Tests;
+-
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.openqa.selenium.support.ui.Select;
+-import org.testng.Assert;
+-import org.testng.annotations.AfterMethod;
+-import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+-
+-import java.time.Duration;
+-
+-public class DropdownTest {
+-    private WebDriver driver;
+-
+-    @BeforeMethod
+-    public void setUp() {
+-        WebDriverManager.chromedriver().setup();
+-        driver = new ChromeDriver();
+-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+-        driver.manage().window().maximize();
+-    }
+-
+-    @Test
+-    public void testDropdown() {
+-        // Navigate to the dropdown
+-        driver.get("https://the-internet.herokuapp.com/dropdown");
+-
+-        // Locate the dropdown element
+-        WebElement dropdownElement = driver.findElement(By.id("dropdown"));
+-        Select dropdown = new Select(dropdownElement);
+-
+-        // Select "Option 1" and verify
+-        dropdown.selectByVisibleText("Option 2");
+-        Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), "Option 2");
+-
+-        /* // Select "Option 2" and verify
+-        dropdown.selectByVisibleText("Option 2");
+-        Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), "Option 2");
+-
+-         */
+-    }
+-}
+Index: src/test/java/Tests/testNavigateToAboutPage.java
+===================================================================
+diff --git a/src/test/java/Tests/testNavigateToAboutPage.java b/src/test/java/Tests/testNavigateToAboutPage.java
+deleted file mode 100644
+--- a/src/test/java/Tests/testNavigateToAboutPage.java	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
++++ /dev/null	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
+@@ -1,59 +0,0 @@
+-package Tests;
+-
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.testng.Assert;
+-import org.testng.annotations.AfterMethod;
+-import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+-
+-import java.time.Duration;
+-
+-public class testNavigateToAboutPage {
+-    private WebDriver driver;
+-
+-    @BeforeMethod
+-    public void setUp() {
+-        WebDriverManager.chromedriver().setup();
+-        driver = new ChromeDriver();
+-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+-        driver.manage().window().maximize();
+-
+-    }
+-    @Test
+-    public void testNavigateToAboutPage() throws InterruptedException {
+-        // Step 1: Navigate to Sauce Demo homepage
+-        driver.get("https://www.saucedemo.com/");
+-        Thread.sleep(2000); // Wait for 2 seconds to see the page
+-
+-        // Step 2: Log in with valid credentials
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the login process
+-
+-        // Step 3: Open the hamburger menu
+-        driver.findElement(By.id("react-burger-menu-btn")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the menu
+-
+-        // Step 4: Click on the About link
+-        driver.findElement(By.id("about_sidebar_link")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the About page
+-
+-        // Step 5: Verify redirect to the About page
+-        String currentUrl = driver.getCurrentUrl();
+-        Assert.assertTrue(currentUrl.contains("saucelabs.com"), "Did not navigate to the About page correctly.");
+-    }
+-
+-    @AfterMethod
+-    public void tearDown() {
+-        if (driver != null) {
+-            driver.quit();
+-}
+-
+-    }
+-}
+-
+-
+Index: src/test/java/Tests/CheckoutTest1.java
+===================================================================
+diff --git a/src/test/java/Tests/CheckoutTest1.java b/src/test/java/Tests/CheckoutTest1.java
+deleted file mode 100644
+--- a/src/test/java/Tests/CheckoutTest1.java	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
++++ /dev/null	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
+@@ -1,141 +0,0 @@
+-package Tests;
+-
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.testng.Assert;
+-import org.testng.annotations.AfterMethod;
+-import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+-
+-import java.time.Duration;
+-
+-public class CheckoutTest1 {
+-    private WebDriver driver;
+-
+-    @BeforeMethod
+-    public void setUp() {
+-        WebDriverManager.chromedriver().setup();
+-        driver = new ChromeDriver();
+-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+-        driver.manage().window().maximize();
+-    }
+-
+-    @Test
+-    public void testCheckout() {
+-        // Navigate to Sauce Demo homepage
+-        driver.get("https://www.saucedemo.com/");
+-
+-        // Log in with valid credentials
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-
+-        // Add the first product to the cart
+-        driver.findElement(By.cssSelector(".btn_inventory")).click();
+-
+-        // Navigate to the cart
+-        driver.findElement(By.cssSelector(".shopping_cart_link")).click();
+-
+-        // Proceed to checkout
+-        driver.findElement(By.id("checkout")).click();
+-
+-        // Verify the checkout page loaded
+-        WebElement checkoutPageTitle = driver.findElement(By.className("title"));
+-        Assert.assertTrue(checkoutPageTitle.getText().contains("Checkout: Your Information"), "Checkout page did not load.");
+-    }
+-
+-    @Test
+-    public void testFirstNameField() {
+-        // Navigate to Sauce Demo homepage and log in
+-        driver.get("https://www.saucedemo.com/");
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-
+-        // Navigate to checkout page
+-        driver.findElement(By.cssSelector(".btn_inventory")).click();
+-        driver.findElement(By.cssSelector(".shopping_cart_link")).click();
+-        driver.findElement(By.id("checkout")).click();
+-
+-        // Verify first name field is present
+-        WebElement firstNameField = driver.findElement(By.id("first-name"));
+-        Assert.assertTrue(firstNameField.isDisplayed(), "First name field is not displayed.");
+-        firstNameField.sendKeys("John");
+-    }
+-
+-    @Test
+-    public void testLastNameField() {
+-        // Navigate to Sauce Demo homepage and log in
+-        driver.get("https://www.saucedemo.com/");
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-
+-        // Navigate to checkout page
+-        driver.findElement(By.cssSelector(".btn_inventory")).click();
+-        driver.findElement(By.cssSelector(".shopping_cart_link")).click();
+-        driver.findElement(By.id("checkout")).click();
+-
+-        // Verify last name field is present
+-        WebElement lastNameField = driver.findElement(By.id("last-name"));
+-        Assert.assertTrue(lastNameField.isDisplayed(), "Last name field is not displayed.");
+-        lastNameField.sendKeys("Doe");
+-    }
+-
+-    @Test
+-    public void testPostalCodeField() {
+-        // Navigate to Sauce Demo homepage and log in
+-        driver.get("https://www.saucedemo.com/");
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-
+-        // Navigate to checkout page
+-        driver.findElement(By.cssSelector(".btn_inventory")).click();
+-        driver.findElement(By.cssSelector(".shopping_cart_link")).click();
+-        driver.findElement(By.id("checkout")).click();
+-
+-        // Verify postal code field is present
+-        WebElement postalCodeField = driver.findElement(By.id("postal-code"));
+-        Assert.assertTrue(postalCodeField.isDisplayed(), "Postal code field is not displayed.");
+-        postalCodeField.sendKeys("12345");
+-    }
+-
+-    @Test
+-    public void testContinueButton() {
+-        // Navigate to Sauce Demo homepage and log in
+-        driver.get("https://www.saucedemo.com/");
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-
+-        // Navigate to checkout page
+-        driver.findElement(By.cssSelector(".btn_inventory")).click();
+-        driver.findElement(By.cssSelector(".shopping_cart_link")).click();
+-        driver.findElement(By.id("checkout")).click();
+-
+-        // Fill in required fields
+-        driver.findElement(By.id("first-name")).sendKeys("John");
+-        driver.findElement(By.id("last-name")).sendKeys("Doe");
+-        driver.findElement(By.id("postal-code")).sendKeys("12345");
+-
+-        // Click the continue button
+-        WebElement continueButton = driver.findElement(By.id("continue"));
+-        Assert.assertTrue(continueButton.isDisplayed(), "Continue button is not displayed.");
+-        continueButton.click();
+-
+-        // Verify navigation to the next page
+-        WebElement summaryTitle = driver.findElement(By.className("title"));
+-        Assert.assertTrue(summaryTitle.getText().contains("Checkout: Overview"), "Did not navigate to checkout overview page.");
+-    }
+-
+-    @AfterMethod
+-    public void tearDown() {
+-        if (driver != null) {
+-            driver.quit();
+-        }
+-    }
+-}
+Index: src/test/java/Tests/SauceLoginTest.java
+===================================================================
+diff --git a/src/test/java/Tests/SauceLoginTest.java b/src/test/java/Tests/SauceLoginTest.java
+deleted file mode 100644
+--- a/src/test/java/Tests/SauceLoginTest.java	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
++++ /dev/null	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
+@@ -1,58 +0,0 @@
+-package Tests;
+-
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.testng.Assert;
+-import org.testng.annotations.AfterMethod;
+-import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+-
+-import java.time.Duration;
+-
+-public class SauceLoginTest {
+-    private WebDriver driver;
+-
+-    @BeforeMethod
+-    public void setUp() {
+-        WebDriverManager.chromedriver().setup();
+-        driver = new ChromeDriver();
+-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+-        driver.manage().window().maximize();
+-    }
+-
+-    @Test
+-    public void testLogin() {
+-        // Navigate to the Sauce Demo homepage
+-        driver.get("https://www.saucedemo.com/");
+-
+-        // Locate and enter username
+-        WebElement usernameField = driver.findElement(By.id("user-name"));
+-        usernameField.sendKeys("standard_user");
+-
+-        // Locate and enter password
+-        WebElement passwordField = driver.findElement(By.id("password"));
+-        passwordField.sendKeys("secret_sauce");
+-
+-        // Click login button
+-        WebElement loginButton = driver.findElement(By.id("login-button"));
+-        loginButton.click();
+-
+-        // Verify the page has successfully loaded Also check if product images are displayed
+-        WebElement productImage = driver.findElement(By.cssSelector(".inventory_item_img"));
+-        Assert.assertTrue(productImage.isDisplayed(), "Product page not loaded.");
+-
+-        /*
+-    }
+-
+-    @AfterMethod
+-    public void tearDown() {
+-        if (driver != null) {
+-            driver.quit();
+-        }
+-
+-         */
+-    }
+-}
+Index: src/test/java/Tests/CheckoutTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/CheckoutTest.java b/src/test/java/Tests/CheckoutTest.java
+deleted file mode 100644
+--- a/src/test/java/Tests/CheckoutTest.java	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
++++ /dev/null	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
+@@ -1,50 +0,0 @@
+-package Tests;
+-
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.testng.Assert;
+-import org.testng.annotations.AfterMethod;
+-import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+-
+-import java.time.Duration;
+-
+-public class CheckoutTest {
+-    private WebDriver driver;
+-
+-    @BeforeMethod
+-    public void setUp() {
+-        WebDriverManager.chromedriver().setup();
+-        driver = new ChromeDriver();
+-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+-        driver.manage().window().maximize();
+-    }
+-
+-    @Test
+-    public void testCheckout() {
+-        // Navigate to Sauce Demo homepage
+-        driver.get("https://www.saucedemo.com/");
+-
+-        // Log in with valid credentials
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-
+-        // Add the first product to the cart
+-        driver.findElement(By.cssSelector(".btn_inventory")).click();
+-
+-        // Navigate to the
+-        driver.findElement(By.cssSelector(".shopping_cart_link")).click();
+-
+-        // Proceed to checkout
+-        driver.findElement(By.id("checkout")).click();
+-
+-        // Verify the checkout page loaded
+-        WebElement checkoutPageTitle = driver.findElement(By.className("title"));
+-        Assert.assertTrue(checkoutPageTitle.getText().contains("Checkout: Your Information"), "Checkout page did not load.");
+-      // Hi, My Name is Mo
+-    }
+-}
+Index: src/test/java/Tests/TestEndToEndPurchase.java
+===================================================================
+diff --git a/src/test/java/Tests/TestEndToEndPurchase.java b/src/test/java/Tests/TestEndToEndPurchase.java
+deleted file mode 100644
+--- a/src/test/java/Tests/TestEndToEndPurchase.java	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
++++ /dev/null	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
+@@ -1,83 +0,0 @@
+-package Tests;
+-
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.testng.Assert;
+-import org.testng.annotations.AfterMethod;
+-import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+-
+-import java.time.Duration;
+-
+-public class TestEndToEndPurchase {
+-    private WebDriver driver;
+-
+-    @BeforeMethod
+-    public void setUp() {
+-        WebDriverManager.chromedriver().setup();
+-        driver = new ChromeDriver();
+-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+-        driver.manage().window().maximize();
+-    }
+-
+-    @Test
+-    public void testEndToEndPurchase() throws InterruptedException {
+-        // Step 1: Navigate to Sauce Demo homepage
+-        driver.get("https://www.saucedemo.com/");
+-        Thread.sleep(2000); // Wait for 2 seconds to see the page
+-
+-        // Step 2: Log in with valid credentials
+-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+-        driver.findElement(By.id("login-button")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the login process
+-
+-        // Step 3: Add the first product to the cart
+-        driver.findElement(By.cssSelector(".btn_inventory")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the item being added to the cart
+-
+-        // Step 4: Navigate to the cart
+-        driver.findElement(By.cssSelector(".shopping_cart_link")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the cart page
+-
+-        // Step 5: Verify cart contents
+-        WebElement cartItem = driver.findElement(By.cssSelector(".cart_item"));
+-        Assert.assertTrue(cartItem.isDisplayed(), "Cart item is not displayed.");
+-
+-        // Step 6: Proceed to checkout
+-        driver.findElement(By.id("checkout")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the checkout page
+-
+-        // Step 7: Fill in checkout information
+-        driver.findElement(By.id("first-name")).sendKeys("John");
+-        driver.findElement(By.id("last-name")).sendKeys("Doe");
+-        driver.findElement(By.id("postal-code")).sendKeys("12345");
+-        Thread.sleep(2000); // Wait for 2 seconds to see the form being filled
+-
+-        // Step 8: Continue to the next page
+-        driver.findElement(By.id("continue")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the overview page
+-
+-        // Step 9: Verify checkout overview page
+-        WebElement overviewTitle = driver.findElement(By.className("title"));
+-        Assert.assertTrue(overviewTitle.getText().contains("Checkout: Overview"), "Checkout overview page did not load.");
+-
+-        // Step 10: Finish the purchase
+-        driver.findElement(By.id("finish")).click();
+-        Thread.sleep(2000); // Wait for 2 seconds to see the order completion page
+-
+-        // Step 11: Verify order completion
+-        WebElement orderConfirmation = driver.findElement(By.className("complete-header"));
+-        Assert.assertTrue(orderConfirmation.getText().contains("Thank you for your order!"), "Order was not completed successfully.");
+-    }
+-
+-    @AfterMethod
+-    public void tearDown() {
+-        if (driver != null) {
+-            driver.quit();
+-        }
+-    }
+-}
+Index: src/test/java/Tests/CheckOutTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/CheckOutTest.java b/src/test/java/Tests/CheckOutTest.java
+new file mode 100644
+--- /dev/null	(date 1736885535665)
++++ b/src/test/java/Tests/CheckOutTest.java	(date 1736885535665)
+@@ -0,0 +1,6 @@
++package Tests;
++
++public class CheckOutTest {
++
++
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"mobile apps included now\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2qIyB5upYtH5C9CGNPJ6RAvnF9g\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollToSource\" value=\"true\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/www/css\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.TestEndToEndPurchase\">\r\n    <configuration name=\"Bet365HomepageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.Bet365HomepageTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CheckoutTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.CheckoutTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SauceLoginTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.SauceLoginTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestEndToEndPurchase\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.TestEndToEndPurchase\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"testNavigateToAboutPage\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.testNavigateToAboutPage\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.TestEndToEndPurchase\" />\r\n        <item itemvalue=\"TestNG.SauceLoginTest\" />\r\n        <item itemvalue=\"TestNG.Bet365HomepageTest\" />\r\n        <item itemvalue=\"TestNG.testNavigateToAboutPage\" />\r\n        <item itemvalue=\"TestNG.CheckoutTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"\" />\r\n      <created>1734364246942</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1734364246942</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375030838</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375030838</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375076803</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375076803</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375288848</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375288848</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375406166</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375406166</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735766908306</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735766908307</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736085070737</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736085070737</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736163176544</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736163176544</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736173364610</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736173364610</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736175857672</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736175857672</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"mobile apps included now\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mobile apps included now\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 62df34ab722dd9d2fb9b3c6bfde371ce886affb6)
++++ b/.idea/workspace.xml	(date 1736879571083)
+@@ -4,7 +4,18 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now" />
++    <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now">
++      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckOutTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/GoogleHomePageTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestEndToEndPurchase.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/testNavigateToAboutPage.java" beforeDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -26,9 +37,25 @@
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Sheriffsavio&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/monsieurmo6554/Testproject.git&quot;,
++    &quot;accountId&quot;: &quot;61983c02-9896-4d35-a6be-214d17133118&quot;
++  }
++}</component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
++  <component name="ProjectColorInfo">{
++  &quot;customColor&quot;: &quot;&quot;,
++  &quot;associatedIndex&quot;: 7
++}</component>
+   <component name="ProjectId" id="2qIyB5upYtH5C9CGNPJ6RAvnF9g" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -41,6 +68,12 @@
+     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;TestNG.AddToCartTest.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.Bet365HomepageTest.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.GoogleHomePageTest.executor&quot;: &quot;Run&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master-Sheriff-TestAutomation&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java&quot;,
+     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+@@ -52,8 +85,8 @@
+       <recent name="$PROJECT_DIR$/www/css" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.TestEndToEndPurchase">
+-    <configuration name="Bet365HomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="TestNG.AddToCartTest">
++    <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -62,7 +95,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.Bet365HomepageTest" />
++      <option name="MAIN_CLASS_NAME" value="Tests.AddToCartTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -70,7 +103,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="Bet365HomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -79,7 +112,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutTest" />
++      <option name="MAIN_CLASS_NAME" value="Tests.Bet365HomepageTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -87,7 +120,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SauceLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="GoogleHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -96,7 +129,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.SauceLoginTest" />
++      <option name="MAIN_CLASS_NAME" value="Tests.GoogleHomePageTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -104,7 +137,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TestEndToEndPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="SauceLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -113,7 +146,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.TestEndToEndPurchase" />
++      <option name="MAIN_CLASS_NAME" value="Tests.SauceLoginTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -121,7 +154,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="testNavigateToAboutPage" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TestEndToEndPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -130,7 +163,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.testNavigateToAboutPage" />
++      <option name="MAIN_CLASS_NAME" value="Tests.TestEndToEndPurchase" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -140,11 +173,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="TestNG.AddToCartTest" />
++        <item itemvalue="TestNG.GoogleHomePageTest" />
++        <item itemvalue="TestNG.Bet365HomepageTest" />
+         <item itemvalue="TestNG.TestEndToEndPurchase" />
+         <item itemvalue="TestNG.SauceLoginTest" />
+-        <item itemvalue="TestNG.Bet365HomepageTest" />
+-        <item itemvalue="TestNG.testNavigateToAboutPage" />
+-        <item itemvalue="TestNG.CheckoutTest" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -229,7 +262,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1736175857672</updated>
+     </task>
+-    <option name="localTasksCounter" value="10" />
++    <task id="LOCAL-00010" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1736879485888</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1736879485890</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+Index: src/test/java/Tests/GoogleHomePageTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/GoogleHomePageTest.java b/src/test/java/Tests/GoogleHomePageTest.java
+new file mode 100644
+--- /dev/null	(date 1736794641571)
++++ b/src/test/java/Tests/GoogleHomePageTest.java	(date 1736794641571)
+@@ -0,0 +1,50 @@
++package Tests;
++
++import io.github.bonigarcia.wdm.WebDriverManager;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.testng.Assert;
++import org.testng.annotations.BeforeMethod;
++import org.testng.annotations.Test;
++
++import java.time.Duration;
++
++public class GoogleHomePageTest {
++        private WebDriver driver;
++
++        @BeforeMethod
++        public void setUp() {
++            // Setup ChromeDriver using WebDriverManager
++            WebDriverManager.chromedriver().setup();
++            driver = new ChromeDriver();
++            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
++            driver.manage().window().maximize();
++
++        }
++
++        @Test
++        public void testHomepage() {
++            // Navigate to Google homepage
++            driver.get("https://www.google.com");
++
++
++            // Verify if key elements are visible, for example, the logo or a navigation element
++            WebElement logo = driver.findElement(By.id("hplogo"));
++
++            Assert.assertTrue(logo.isDisplayed(), "Google logo is visible.");
++
++            //Minimize page after running test
++            driver.manage().window().minimize();
++
++
++
++
++
++        }
++
++    }
++
++
++

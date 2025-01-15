@@ -1,0 +1,275 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"mobile apps included now\" />\r\n    <list default=\"true\" id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2qIyB5upYtH5C9CGNPJ6RAvnF9g\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollToSource\" value=\"true\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/www/css\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"\" />\r\n      <created>1734364246942</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1734364246942</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375030838</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375030838</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375076803</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375076803</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"mobile apps included now\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mobile apps included now\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b2b124ffa336883f13d83bcddf52178c4e08bc9d)
++++ b/.idea/workspace.xml	(date 1736885639116)
+@@ -5,9 +5,6 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now" />
+-    <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -16,12 +13,17 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="Class" />
+         <option value="HTML File" />
++        <option value="Class" />
+       </list>
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+@@ -39,13 +41,112 @@
+     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java&quot;
++    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/www/css" />
+     </key>
++  </component>
++  <component name="RunManager">
++    <configuration name="Bet365HomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TestProject" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Tests.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="Tests" />
++      <option name="MAIN_CLASS_NAME" value="Tests.Bet365HomepageTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TestProject" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Tests.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="Tests" />
++      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="SauceLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TestProject" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Tests.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="Tests" />
++      <option name="MAIN_CLASS_NAME" value="Tests.SauceLoginTest" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TestEndToEndPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TestProject" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Tests.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="Tests" />
++      <option name="MAIN_CLASS_NAME" value="Tests.TestEndToEndPurchase" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="testNavigateToAboutPage" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="TestProject" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Tests.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="Tests" />
++      <option name="MAIN_CLASS_NAME" value="Tests.testNavigateToAboutPage" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="TestNG.TestEndToEndPurchase" />
++        <item itemvalue="TestNG.SauceLoginTest" />
++        <item itemvalue="TestNG.Bet365HomepageTest" />
++        <item itemvalue="TestNG.testNavigateToAboutPage" />
++        <item itemvalue="TestNG.CheckoutTest" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -72,7 +173,63 @@
+       <option name="project" value="LOCAL" />
+       <updated>1734375076803</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1734375288848</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1734375288848</updated>
++    </task>
++    <task id="LOCAL-00004" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1734375406166</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1734375406166</updated>
++    </task>
++    <task id="LOCAL-00005" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1735766908306</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1735766908307</updated>
++    </task>
++    <task id="LOCAL-00006" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1736085070737</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1736085070737</updated>
++    </task>
++    <task id="LOCAL-00007" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1736163176544</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1736163176544</updated>
++    </task>
++    <task id="LOCAL-00008" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1736173364610</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1736173364610</updated>
++    </task>
++    <task id="LOCAL-00009" summary="mobile apps included now">
++      <option name="closed" value="true" />
++      <created>1736175857672</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1736175857672</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+Index: src/test/java/Tests/GoogleHomePageTest.java
+===================================================================
+diff --git a/src/test/java/Tests/GoogleHomePageTest.java b/src/test/java/Tests/GoogleHomePageTest.java
+new file mode 100644
+--- /dev/null	(date 1736885619782)
++++ b/src/test/java/Tests/GoogleHomePageTest.java	(date 1736885619782)
+@@ -0,0 +1,50 @@
++package Tests;
++
++import io.github.bonigarcia.wdm.WebDriverManager;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.testng.Assert;
++import org.testng.annotations.BeforeMethod;
++import org.testng.annotations.Test;
++
++import java.time.Duration;
++
++public class GoogleHomePageTest {
++        private WebDriver driver;
++
++        @BeforeMethod
++        public void setUp() {
++            // Setup ChromeDriver using WebDriverManager
++            WebDriverManager.chromedriver().setup();
++            driver = new ChromeDriver();
++            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
++            driver.manage().window().maximize();
++
++        }
++
++        @Test
++        public void testHomepage() {
++            // Navigate to Google homepage
++            driver.get("https://www.google.com");
++
++
++            // Verify if key elements are visible, for example, the logo or a navigation element
++            WebElement logo = driver.findElement(By.id("hplogo"));
++
++            Assert.assertTrue(logo.isDisplayed(), "Google logo is visible.");
++
++            //Minimize page after running test
++            driver.manage().window().minimize();
++
++
++
++
++
++        }
++
++    }
++
++
++

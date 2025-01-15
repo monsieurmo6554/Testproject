@@ -1,0 +1,196 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"mobile apps included now\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2qIyB5upYtH5C9CGNPJ6RAvnF9g\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollToSource\" value=\"true\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/www/css\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.TestEndToEndPurchase\">\r\n    <configuration name=\"Bet365HomepageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.Bet365HomepageTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CheckoutTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.CheckoutTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SauceLoginTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.SauceLoginTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestEndToEndPurchase\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.TestEndToEndPurchase\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"testNavigateToAboutPage\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"TestProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.testNavigateToAboutPage\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.TestEndToEndPurchase\" />\r\n        <item itemvalue=\"TestNG.SauceLoginTest\" />\r\n        <item itemvalue=\"TestNG.Bet365HomepageTest\" />\r\n        <item itemvalue=\"TestNG.testNavigateToAboutPage\" />\r\n        <item itemvalue=\"TestNG.CheckoutTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"40ddaa9c-fb23-49c4-aa61-24be048105bc\" name=\"Changes\" comment=\"\" />\r\n      <created>1734364246942</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1734364246942</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375030838</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375030838</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375076803</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375076803</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375288848</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375288848</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734375406166</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1734375406166</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735766908306</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735766908307</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736085070737</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736085070737</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736163176544</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736163176544</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736173364610</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736173364610</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"mobile apps included now\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736175857672</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1736175857672</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"mobile apps included now\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mobile apps included now\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 873fccc68431b6c595accbfe881baa0bf27e6989)
++++ b/.idea/workspace.xml	(date 1736270576968)
+@@ -4,7 +4,21 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now" />
++    <list default="true" id="40ddaa9c-fb23-49c4-aa61-24be048105bc" name="Changes" comment="mobile apps included now">
++      <change afterPath="$PROJECT_DIR$/src/test/TestScripts/Bet365HomePage.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/GoogleHomePageTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/TestScripts/HomePageTest.md" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddToCartTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AmazonHomepageTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckboxesTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DropdownTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SauceLoginTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestEndToEndPurchase.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/testNavigateToAboutPage.java" beforeDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -21,7 +35,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="master-hammed" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -36,24 +50,29 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "DefaultHtmlFileTemplate": "HTML File",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "TestNG.AddToCartTest.executor": "Run",
++    "TestNG.AmazonHomepageTest.executor": "Run",
++    "TestNG.Bet365HomepageTest.executor": "Run",
++    "TestNG.SauceLoginTest.executor": "Run",
++    "git-widget-placeholder": "master-Sheriff-TestAutomation",
++    "onboarding.tips.debug.path": "/Users/hammedogunrinola/Downloads/TestProject/src/main/java/com/testproject/Main.java",
++    "project.structure.last.edited": "Project",
++    "project.structure.proportion": "0.0",
++    "project.structure.side.proportion": "0.0"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/www/css" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.TestEndToEndPurchase">
+-    <configuration name="Bet365HomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="TestNG.Bet365HomepageTest">
++    <configuration name="AddToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -62,7 +81,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.Bet365HomepageTest" />
++      <option name="MAIN_CLASS_NAME" value="Tests.AddToCartTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -70,7 +89,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="AmazonHomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -79,7 +98,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutTest" />
++      <option name="MAIN_CLASS_NAME" value="Tests.AmazonHomepageTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -87,7 +106,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SauceLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="Bet365HomepageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -96,7 +115,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.SauceLoginTest" />
++      <option name="MAIN_CLASS_NAME" value="Tests.Bet365HomepageTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -104,7 +123,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TestEndToEndPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="SauceLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -113,7 +132,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.TestEndToEndPurchase" />
++      <option name="MAIN_CLASS_NAME" value="Tests.SauceLoginTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -121,7 +140,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="testNavigateToAboutPage" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TestEndToEndPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="TestProject" />
+       <extension name="coverage">
+         <pattern>
+@@ -130,7 +149,7 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Tests" />
+-      <option name="MAIN_CLASS_NAME" value="Tests.testNavigateToAboutPage" />
++      <option name="MAIN_CLASS_NAME" value="Tests.TestEndToEndPurchase" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -140,11 +159,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.TestEndToEndPurchase" />
+-        <item itemvalue="TestNG.SauceLoginTest" />
+         <item itemvalue="TestNG.Bet365HomepageTest" />
+-        <item itemvalue="TestNG.testNavigateToAboutPage" />
+-        <item itemvalue="TestNG.CheckoutTest" />
++        <item itemvalue="TestNG.AmazonHomepageTest" />
++        <item itemvalue="TestNG.SauceLoginTest" />
++        <item itemvalue="TestNG.AddToCartTest" />
++        <item itemvalue="TestNG.TestEndToEndPurchase" />
+       </list>
+     </recent_temporary>
+   </component>
+Index: src/test/java/Tests/AmazonHomepageTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Tests;\r\n\r\nimport io.github.bonigarcia.wdm.WebDriverManager;\r\nimport org.openqa.selenium.WebDriver;\r\nimport org.openqa.selenium.chrome.ChromeDriver;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.AfterMethod;\r\nimport org.testng.annotations.BeforeMethod;\r\nimport org.testng.annotations.Test;\r\n\r\nimport java.time.Duration;\r\n\r\npublic class AmazonHomepageTest {\r\n    private WebDriver driver;\r\n\r\n    @BeforeMethod\r\n    public void setUp() {\r\n        // Setup ChromeDriver using WebDriverManager\r\n        WebDriverManager.chromedriver().setup();\r\n        driver = new ChromeDriver();\r\n        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));\r\n        driver.manage().window().maximize();\r\n    }\r\n\r\n    @Test\r\n    public void testHomepage() {\r\n        // Navigate to Amazon.co.uk homepage\r\n        driver.get(\"https://www.amazon.co.uk\");\r\n\r\n\r\n        // Just wait for the homepage to load and display it for demonstration\r\n        // You can add a simple assertion or validation like checking if the page title is correct\r\n        String pageTitle = driver.getTitle();\r\n        System.out.println(\"Page title is: \" + pageTitle);\r\n\r\n        // You can assert the title to check if you're on the correct page\r\n        Assert.assertTrue(pageTitle.contains(\"Amazon\"), \"Homepage not loaded correctly.\");\r\n\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/test/java/Tests/AmazonHomepageTest.java b/src/test/java/Tests/AmazonHomepageTest.java
+--- a/src/test/java/Tests/AmazonHomepageTest.java	(revision 873fccc68431b6c595accbfe881baa0bf27e6989)
++++ b/src/test/java/Tests/AmazonHomepageTest.java	(date 1736270156337)
+@@ -36,5 +36,6 @@
+         // You can assert the title to check if you're on the correct page
+         Assert.assertTrue(pageTitle.contains("Amazon"), "Homepage not loaded correctly.");
+ 
++
+     }
+ }

@@ -1,0 +1,16 @@
+Index: src/test/java/Tests/CheckOutTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/CheckOutTest.java b/src/test/java/Tests/CheckOutTest.java
+new file mode 100644
+--- /dev/null	(date 1736885613380)
++++ b/src/test/java/Tests/CheckOutTest.java	(date 1736885613380)
+@@ -0,0 +1,6 @@
++package Tests;
++
++public class CheckOutTest {
++
++
++}
